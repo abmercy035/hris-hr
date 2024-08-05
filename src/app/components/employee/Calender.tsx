@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
+  const [selectedDay, setSelectedDay] = useState<Date | null>(null);
   const [days, setDays] = useState<Date[]>([]);
-  const [selectedDay, setSelectedDay] = useState(null);
 
   useEffect(() => {
     const startOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
     const endOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
 
-      const daysArray: Date[] = [];
+    const daysArray: Date[] = [];
     for (let i = startOfMonth.getDate(); i <= endOfMonth.getDate(); i++) {
       daysArray.push(new Date(currentDate.getFullYear(), currentDate.getMonth(), i));
     }
@@ -28,7 +28,7 @@ const Calendar = () => {
 
   const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-  const handleDayClick = (day) => {
+  const handleDayClick = (day: Date) => {
     setSelectedDay(day);
   };
 
