@@ -27,9 +27,9 @@ export function Datatable({ tableHead, tableData }: dataTableProps) {
   const paginationsMin = paginationsMax - paginationsRange;
   console.log(paginations > tableData.length / paginationsRange)
   const router = useRouter()
- const showInterviewStatus = () => {
-  router.push("scheduling/interview-status");
-};
+  const showInterviewStatus = () => {
+    router.push("scheduling/interview-status");
+  };
   useEffect(() => {
     setPaginations(1)
   }, [tableData])
@@ -44,7 +44,7 @@ export function Datatable({ tableHead, tableData }: dataTableProps) {
       <TableBody>
         {tableData.map((invoice, index) => {
           if (index > paginationsMin && index < paginationsMax) return (
-            <TableRow key={index} onClick={() => showInterviewStatus(invoice.invoice)}>
+            <TableRow key={index} onClick={() => showInterviewStatus()}>
               <TableCell className="font-medium"  >{invoice.invoice}</TableCell>
               <TableCell className="font-medium">{invoice.department}</TableCell>
               <TableCell>
