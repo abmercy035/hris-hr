@@ -29,7 +29,7 @@ export default function Tasklist() {
                 <div className='flex items-start'>
                 <Circle className='w-3 h-3 text-red-600' />
                 <div className='ms-2'>
-                    <h3 className='font-semibold text-[15px]'>Attend Nischal's Birthday Party</h3>
+                    <h3 className='font-semibold text-[15px]'>Attend Nischal&lsquo;s Birthday Party</h3>
                     <p className='text-[11px] font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reprehenderit dolorem?</p>
                 </div>
 
@@ -50,7 +50,7 @@ export default function Tasklist() {
                 <div className='flex items-start'>
                 <Circle className='w-3 h-3 text-green-600' />
                 <div className='ms-2'>
-                    <h3 className='font-semibold text-[15px]'>Attend Nischal's Birthday Party</h3>
+                    <h3 className='font-semibold text-[15px]'>Attend Nischal&lsquo;s Birthday Party</h3>
                     <p className='text-[11px] font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reprehenderit dolorem?</p>
                 </div>
 
@@ -71,7 +71,7 @@ export default function Tasklist() {
                 <div className='flex items-start'>
                 <Circle className='w-3 h-3 text-green-600' />
                 <div className='ms-2'>
-                    <h3 className='font-semibold text-[15px]'>Attend Nischal's Birthday Party</h3>
+                    <h3 className='font-semibold text-[15px]'>Attend Nischal&lsquo;s Birthday Party</h3>
                     <p className='text-[11px] font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reprehenderit dolorem?</p>
                 </div>
 
@@ -120,7 +120,7 @@ export default function Tasklist() {
                 <div className='flex items-start'>
                 <Circle className='w-3 h-3 text-green-600' />
                 <div className='ms-2'>
-                    <h3 className='font-semibold text-[15px]'>Attend Nischal's Birthday Party</h3>
+                    <h3 className='font-semibold text-[15px]'>Attend Nischal&lsquo;s Birthday Party</h3>
                     <p className='text-[11px] font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reprehenderit dolorem?</p>
                 </div>
 
@@ -141,7 +141,7 @@ export default function Tasklist() {
                 <div className='flex items-start'>
                 <Circle className='w-3 h-3 text-green-600' />
                 <div className='ms-2'>
-                    <h3 className='font-semibold text-[15px]'>Attend Nischal's Birthday Party</h3>
+                    <h3 className='font-semibold text-[15px]'>Attend Nischal&lsquo;s Birthday Party</h3>
                     <p className='text-[11px] font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reprehenderit dolorem?</p>
                 </div>
 

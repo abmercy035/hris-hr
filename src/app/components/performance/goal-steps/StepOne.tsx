@@ -2,12 +2,13 @@ import { Braces, Building, Globe, UserCheck, UserCircle } from 'lucide-react'
 import React, { useEffect, useRef, useState } from 'react'
 import Quill from 'quill';
 import 'quill/dist/quill.snow.css';
+import Image from 'next/image';
 
 export default function StepOne() {
   const editorRef = useRef('');
   const [name, setName] = useState('Laura Miller');
   const [profileImage, setProfileImage] = useState('');
-  const defaultProfileImage = '/path/to/default/profile/image.jpg'; 
+  const defaultProfileImage = '/path/to/default/profile/image.jpg';
 
   useEffect(() => {
     const quill = new Quill(editorRef.current, {
@@ -15,7 +16,7 @@ export default function StepOne() {
       modules: {
         toolbar: [
           ['bold', 'italic', 'underline', 'strike'],
-          [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+          [{ 'list': 'ordered' }, { 'list': 'bullet' }],
           ['link', 'image'],
           ['clean']
         ]
@@ -24,7 +25,7 @@ export default function StepOne() {
     });
 
     // return () => {
-      // quill.disable();
+    // quill.disable();
     // };
   }, []);
 
@@ -43,28 +44,28 @@ export default function StepOne() {
       <div className='py-4 flex items-center'>
         <div className='relative w-8/12 flex items-center bg-gray-200 rounded p-2'>
           {profileImage && (
-            <img src={profileImage} alt='Profile' className='w-8 h-8 rounded-full mr-2' />
+            <Image src={profileImage} alt='Profile' className='w-8 h-8 rounded-full mr-2' />
           )}
-          <input 
-            type='text' 
-            value={name} 
-            onChange={(e) => setName(e.target.value)} 
-            className='bg-gray-200 text-black w-full outline-none' 
+          <input
+            type='text'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className='bg-gray-200 text-black w-full outline-none'
             placeholder='Search for a person'
           />
           {(profileImage || name) && (
-            <button 
-              type='button' 
-              onClick={handleRemove} 
+            <button
+              type='button'
+              onClick={handleRemove}
               className='text-black hover:text-red-600 px-2 py-2 text-lg rounded-full absolute right-0 mr-2'
             >
               &times;
             </button>
           )}
         </div>
-        <button 
-          type='button' 
-          onClick={handleAddMyself} 
+        <button
+          type='button'
+          onClick={handleAddMyself}
           className='text-black hover:bg-gray-300 px-2 py-2 ms-3 rounded font-semibold'
         >
           Add Myself
@@ -103,9 +104,9 @@ export default function StepOne() {
 
       <div className='py-4'>
         <h2 className='font-semibold pt-2'>Description (Optional)</h2>
-        <div ref={editorRef} style={{ minHeight: '150px' }} 
-        className='bg-gray-200 rounded text-black w-full p-2'>
-          <div/>
+        <div ref={editorRef} style={{ minHeight: '150px' }}
+          className='bg-gray-200 rounded text-black w-full p-2'>
+          <div />
         </div>
       </div>
     </div>

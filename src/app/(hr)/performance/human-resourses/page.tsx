@@ -64,7 +64,7 @@ const data = [
 ];
 
 
-export default function page() {
+export default function Page() {
   const [tableData, setTableData] = useState<any>(data)
 
   useEffect(() => {

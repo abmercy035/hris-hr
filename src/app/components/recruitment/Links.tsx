@@ -22,7 +22,7 @@ export default function Linked({ dataTableDataOnClient, updataTableDataOnClient,
 
   useEffect(() => {
     updataTableDataOnClient(dataTableDataOnClient)
-  }, [])
+  }, [""])
 
   const fetchTableDataFromServer = (endpoint: string, name: string) => {
     setActiveLink(name)

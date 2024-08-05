@@ -1,4 +1,3 @@
-// pages/goals.tsx
 'use client'
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
@@ -68,7 +67,7 @@ const data = [
 ];
 
 
-export default function page() {
+export default function Page() {
   const [tableData, setTableData] = useState<any>(data)
   const [isModalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);

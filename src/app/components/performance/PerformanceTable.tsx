@@ -1,7 +1,8 @@
 // components/PerformanceTable.tsx
 import React from 'react';
 import styles from '@/styles/PerformanceTable.module.css';
-import PercentageBar from '../performance/PercentageBar'; 
+import PercentageBar from '../performance/PercentageBar';
+import Image from 'next/image';
 
 interface TableProps {
   columns: Array<{ key: string }>;
@@ -15,12 +16,11 @@ const PerformanceTable: React.FC<TableProps> = ({ columns, data }) => {
         {data.map((row, rowIndex) => (
           <div key={rowIndex} className={styles.tableRow}>
             {columns.map((col, colIndex) => {
-              const cellClass = 
+              const cellClass =
                 col.key === 'title' ? styles.wideColumn :
-                col.key === 'percentage' ? styles.longColumn :
-                col.key === 'icon' ? styles.lastColumn :
-                styles.narrowColumn;
-
+                  col.key === 'percentage' ? styles.longColumn :
+                    col.key === 'icon' ? styles.lastColumn :
+                      styles.narrowColumn;
               return (
                 <div
                   key={colIndex}
@@ -28,7 +28,7 @@ const PerformanceTable: React.FC<TableProps> = ({ columns, data }) => {
                 >
                   {col.key === 'title' && row[col.key] ? (
                     <div className={styles.profileContainer}>
-                      <img src={`/images/${row[col.key]}.png`} alt="Profile" className={styles.profileImage} />
+                      <Image src={`/images/${row[col.key]}.png`} alt="Profile" className={styles.profileImage} />
                       <span>{row[col.key]}</span>
                     </div>
                   ) : col.key === 'percentage' ? (
