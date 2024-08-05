@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [days, setDays] = useState([]);
+  const [days, setDays] = useState<Date[]>([]);
   const [selectedDay, setSelectedDay] = useState(null);
 
   useEffect(() => {
     const startOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
     const endOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
 
-    const daysArray = [];
+      const daysArray: Date[] = [];
     for (let i = startOfMonth.getDate(); i <= endOfMonth.getDate(); i++) {
       daysArray.push(new Date(currentDate.getFullYear(), currentDate.getMonth(), i));
     }
