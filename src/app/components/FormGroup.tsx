@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/signup.module.css";
 
-export default function FormGroup({inputCls, label, id, pl, type, value, min, max, required }: { styles: {}, inputCls: any, label: string, id: string, type: string, pl: any, value: any, min: any, max: any, required: boolean }) {
+export default function FormGroup({ inputCls, label, id, pl, type, value, min, max, required }: { inputCls: any, label: string, id: string, type: string, pl: any, value: any, min: any, max: any, required: boolean }) {
     return <div className={styles.form_group} >
         <label htmlFor="fullname">
             {label}
