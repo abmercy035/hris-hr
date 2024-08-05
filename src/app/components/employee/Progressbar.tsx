@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CircularProgressBar = ({ progress, size = 100, color = '#3b82f6' }) => {
+const CircularProgressBar = ({ progress = 0, size = 100, color = '#3b82f6' }) => {
   const radius = size / 2;
   const strokeWidth = 10;
   const normalizedRadius = radius - strokeWidth * 2;
