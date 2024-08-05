@@ -6,7 +6,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/app/components/ui/dropdown-menu"
 import React from 'react'
 
 export default function Sidebarfooter() {
@@ -26,7 +26,7 @@ export default function Sidebarfooter() {
           text: 'Setting',
           arrow: <ChevronDown className="w-3 h-3" />
         },
-       
+
       ]
     }
   ];
@@ -48,12 +48,12 @@ export default function Sidebarfooter() {
                       {option.text}
                     </div>
                     <DropdownMenu>
-                    <DropdownMenuTrigger> {option.arrow}</DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                      <DropdownMenuItem>Dropdown1</DropdownMenuItem>
-                      <DropdownMenuItem>Dropdown2</DropdownMenuItem>
-                    </DropdownMenuContent>
-                  </DropdownMenu>
+                      <DropdownMenuTrigger> {option.arrow}</DropdownMenuTrigger>
+                      <DropdownMenuContent>
+                        <DropdownMenuItem>Dropdown1</DropdownMenuItem>
+                        <DropdownMenuItem>Dropdown2</DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
                   </CommandItem>
                 ))}
               </CommandGroup>
