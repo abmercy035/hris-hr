@@ -1,0 +1,43 @@
+.headText {
+    @apply font-semibold text-[22px] mx-5 mt-3
+}
+.btnContainer {
+    @apply flex items-center gap-5 mx-7 my-2;
+}
+.greenBtn {
+    @apply bg-green-600 px-5 py-1 rounded flex items-center
+}
+.grayBtn {
+    @apply border-gray-700 shadow px-5 py-1 rounded flex items-center
+}
+
+.btnIcons {
+    @apply w-4 h-4 ml-5
+}
+
+.trackContainer {
+    @apply flex justify-between items-center mt-4 ml-6
+}
+
+.trackBtn {
+    @apply text-center border border-gray-300 py-3 rounded-md
+}
+
+.trackNo {
+   @apply font-bold text-2xl
+}
+.outline {
+   @apply flex items-center text-gray-500 text-xs me-2
+}
+.green {
+    @apply flex items-center text-green-500 text-xs me-2
+ }
+ .orange {
+    @apply flex items-center text-orange-500 text-xs me-2
+ }
+ .red {
+    @apply flex items-center text-red-500 text-xs me-2
+ }
+ .gray {
+    @apply flex items-center text-gray-800 text-xs me-2
+ }

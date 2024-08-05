@@ -1,0 +1,96 @@
+.form_container {
+    width: 90%;
+    max-width: 600px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.form_title {
+    font-size: xxx-large;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_group {
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form_label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form_input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #fff;
+    font-size: 14px;
+    color: black;
+}
+
+.form_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.form_bottom_top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.form_bottom_left {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form_bottom_left label {
+    font-size: 16px;
+}
+
+.form_bottom_right {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.form_forgot_password {
+    color: #158359;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.form_checkbox {
+    width: 14px;
+    height: 14px;
+    accent-color: #158359;
+}
+
+.form_button {
+    border: none;
+    background-color: #158359;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 5px;
+    color: white;
+}

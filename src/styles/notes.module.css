@@ -1,0 +1,42 @@
+.container {
+    @apply mt-14 flex justify-between items-center
+}
+.text {
+    @apply text-xl font-normal
+}
+
+.button {
+@apply bg-green-700 text-white flex items-center py-3 px-3 rounded-md
+}
+
+.icon {
+    @apply text-white w-5 h-5 me-2
+}
+
+.border {
+    @apply border-2 p-4 mt-6
+}
+
+.notes {
+    @apply flex justify-between items-center
+}
+
+.image {
+    @apply rounded-full
+}
+
+.userName {
+    @apply font-normal text-lg ms-2
+}
+
+.date {
+    @apply text-gray-500 text-sm
+}
+
+.comment {
+    @apply text-gray-500 text-[17px]
+}
+
+.replies {
+    @apply text-black text-[16px] font-semibold
+}

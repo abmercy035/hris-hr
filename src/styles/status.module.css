@@ -1,0 +1,76 @@
+.container {
+    @apply flex mt-16
+}
+.background {
+    @apply bg-gray-100 items-center p-4 w-1/3 h-1/2 flex flex-col justify-center text-center ms-5;
+}
+
+.arrowIcon {
+    @apply bg-green-500 w-8 h-8 p-1 rounded-full text-white justify-center my-6;
+}
+
+.image {
+    @apply rounded-full my-4;
+}
+
+.h2 {
+    @apply font-semibold text-2xl mt-2
+}
+.h3 {
+    @apply font-normal text-xl
+}
+.p {
+    @apply font-thin text-lg
+}
+
+.contact {
+    @apply justify-start text-left mb-3
+}
+
+.contacth1 {
+    @apply font-semibold text-xl justify-start mt-8
+}
+
+.contactInfo {
+    @apply flex items-center mt-9
+}
+
+.contactIcon{
+    @apply w-4 h-4
+}
+
+.contactText{
+    @apply ms-4
+}
+
+/* INTERVIEW STATUS STYLES */
+.interviewStatus {
+    @apply w-2/3 ms-10 me-10
+}
+
+.interviewHeader {
+    @apply text-2xl font-semibold
+}
+
+/* INTERVIEW DETAILS STYLES */
+
+.interview {
+    @apply flex justify-between items-center mt-5
+}
+
+.interviewText {
+    @apply text-black font-normal text-lg mt-3
+}
+
+.span {
+    @apply text-gray-500 text-sm
+}
+
+.btn {
+ @apply bg-orange-200 text-orange-500 font-semibold p-2 text-center rounded-sm 
+}
+
+.PastIntbtn {
+    @apply bg-red-300 text-red-500 font-semibold p-2 text-center rounded-sm 
+   }
+   

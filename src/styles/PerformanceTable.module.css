@@ -1,0 +1,78 @@
+/* styles/PerformanceTable.module.css */
+.tableContainer {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableRow {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tableCell {
+    flex: 1;
+    padding: 8px;
+    text-align: center; /* Center-aligns text horizontally */
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Center-aligns items vertically */
+    justify-content: center; /* Center-aligns items horizontally */
+}
+
+.longColumn {
+    flex: 2; /* Adjusts width for columns with long content */
+}
+
+.wideColumn {
+    flex: 3; /* Wider column */
+}
+
+.narrowColumn {
+    flex: 1; /* Narrower column */
+}
+
+.lastColumn {
+    flex: 0.5; /* Smallest column */
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+}
+
+.profileImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.progressBarWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.progressBarContainer {
+    flex: 1;
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 100%;
+    background: #4caf50; /* Adjust this color as needed */
+    border-radius: 5px;
+}
+
+.percentageText {
+    min-width: 40px;
+    text-align: right;
+    font-size: 16px;
+}

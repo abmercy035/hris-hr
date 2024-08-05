@@ -1,0 +1,24 @@
+.layout {
+    display: flex;
+    width: 100vw;
+    gap: 5px;
+    max-height: 100vh;
+}
+
+
+.layout_right {
+    width: 100%;
+}
+
+.layout_content {
+    min-width: 800px;
+    width: 100%;
+    max-height: calc(90%);
+    overflow-y: auto;
+}
+
+/* 
+display: grid;
+ 
+}
+ */
