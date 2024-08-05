@@ -23,11 +23,11 @@ export default function StepOne() {
         },
         placeholder: 'Enter your text here...'
       });
-
-      // return () => {
-      // quill.disable();
-      // };
-    }, []);
+    }
+    // return () => {
+    // quill.disable();
+    // };
+  }, []);
 
   const handleRemove = () => {
     setName('');
