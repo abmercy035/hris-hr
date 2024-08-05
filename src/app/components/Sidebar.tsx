@@ -60,9 +60,9 @@ export default function Sidebar() {
             title: "Organisation",
             submenu: true,
             submenuItems: [
-                { title: "Submenu 1" },
-                { title: "Submenu 2" },
-                { title: "Submenu 3" },
+                { title: "Submenu 1", link: '/recruitment/scheduling' },
+                { title: "Submenu 2", link: '/recruitment/scheduling' },
+                { title: "Submenu 3", link: '/recruitment/scheduling' },
             ],
             icon: <BriefcaseBusiness className='w-4 h-4' />
         },
@@ -83,9 +83,9 @@ export default function Sidebar() {
             title: "Compliance",
             submenu: true,
             submenuItems: [
-                { title: "Submenu 1" },
-                { title: "Submenu 2" },
-                { title: "Submenu 3" },
+                { title: "Submenu 1", link: '/recruitment/scheduling' },
+                { title: "Submenu 2", link: '/recruitment/scheduling' },
+                { title: "Submenu 3", link: '/recruitment/scheduling' },
             ],
             icon: <BriefcaseBusiness className='w-4 h-4' />
         },
@@ -93,9 +93,9 @@ export default function Sidebar() {
             title: "Profile",
             submenu: true,
             submenuItems: [
-                { title: "Submenu 1" },
-                { title: "Submenu 2" },
-                { title: "Submenu 3" },
+                { title: "Submenu 1", link: '/recruitment/scheduling' },
+                { title: "Submenu 2", link: '/recruitment/scheduling' },
+                { title: "Submenu 3", link: '/recruitment/scheduling' },
             ],
             spacing: true, icon: <User className='w-4 h-4' />
         },
@@ -118,17 +118,17 @@ export default function Sidebar() {
                 <div className='pt-2'>
                     {(Menus).map((menu, index) => (
                         <React.Fragment key={index}>
-                            <Link href={menu.link ?? "#"}
+                            <Link href={menu?.link ?? "#"}
                                 className={`text-black text-sm flex items-center justify-between gap-x-4 cursor-pointer p-4 
-                                hover:bg-[#148359] hover:text-white rounded-md ${menu.spacing ? "mt-9" : "mt-4"} 
-                                ${activeMenus == menu.title ? "bg-[#148359] text-white" : ""}`}
-                                onClick={() => toggleSubmenu(index, menu.title)}
+                                hover:bg-[#148359] hover:text-white rounded-md ${menu?.spacing ? "mt-9" : "mt-4"} 
+                                ${activeMenus == menu?.title ? "bg-[#148359] text-white" : ""}`}
+                                onClick={() => toggleSubmenu(index, menu?.title)}
                             >
                                 <div className='flex items-center gap-x-4'>
                                     <span className='text-xl block float-left'>
-                                        {menu.icon}
+                                        {menu?.icon}
                                     </span>
-                                    <div>{menu.title}</div>
+                                    <div>{menu?.title}</div>
                                 </div>
                                 {menu?.submenu && (
                                     <ChevronDown
