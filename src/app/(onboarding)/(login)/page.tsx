@@ -16,8 +16,8 @@ export default function Page() {
     return <div className={styles.form_container}>
         <div className={styles.form_title}> Sign In</div>
         <form className={`${styles.form} ${styles.sign_in_form}`} onSubmit={loginFunc}>
-            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Email" type="email" id="email" styles={styles} required pl={undefined} value={undefined} min={undefined} max={undefined} />
-            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Password" type="password" id="password" styles={styles} required pl={undefined} value={undefined} min={undefined} max={undefined} />
+            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Email" type="email" id="email" required pl={undefined} value={undefined} min={undefined} max={undefined} />
+            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Password" type="password" id="password" required pl={undefined} value={undefined} min={undefined} max={undefined} />
 
             <div className={styles.form_bottom}>
 
