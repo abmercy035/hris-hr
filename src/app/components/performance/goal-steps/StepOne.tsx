@@ -9,25 +9,25 @@ export default function StepOne() {
   const [name, setName] = useState('Laura Miller');
   const [profileImage, setProfileImage] = useState('');
   const defaultProfileImage = '/path/to/default/profile/image.jpg';
-
   useEffect(() => {
-    const quill = new Quill(editorRef.current, {
-      theme: 'snow',
-      modules: {
-        toolbar: [
-          ['bold', 'italic', 'underline', 'strike'],
-          [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-          ['link', 'image'],
-          ['clean']
-        ]
-      },
-      placeholder: 'Enter your text here...'
-    });
+    if (editorRef.current) {
+      const quill = new Quill(editorRef.current, {
+        theme: 'snow',
+        modules: {
+          toolbar: [
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+            ['link', 'image'],
+            ['clean']
+          ]
+        },
+        placeholder: 'Enter your text here...'
+      });
 
-    // return () => {
-    // quill.disable();
-    // };
-  }, []);
+      // return () => {
+      // quill.disable();
+      // };
+    }, []);
 
   const handleRemove = () => {
     setName('');
