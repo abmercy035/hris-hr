@@ -15,10 +15,10 @@ export default function Page() {
     return <div className={styles.form_container}>
         <div className={styles.form_title}> Register</div>
         <form className={`${styles.form} ${styles.sign_in_form}`} onSubmit={signupFunc}>
-            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Full name" type="text" id="full_name" styles={styles} required pl={undefined} value={undefined} min={undefined} max={undefined} />
-            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Email" type="email" id="email" styles={styles} required pl={undefined} value={undefined} min={undefined} max={undefined} />
-            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Phone" type="tel" id="mobile" styles={styles} required pl={undefined} value={undefined} min={undefined} max={undefined} />
-            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Password" type="password" id="password" styles={styles} required pl={undefined} value={undefined} min={undefined} max={undefined} />
+            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Full name" type="text" id="full_name" required pl={undefined} value={undefined} min={undefined} max={undefined} />
+            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Email" type="email" id="email" required pl={undefined} value={undefined} min={undefined} max={undefined} />
+            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Phone" type="tel" id="mobile" required pl={undefined} value={undefined} min={undefined} max={undefined} />
+            <FormGroup inputCls={`${styles.form_input} ${styles.req_input}`} label="Password" type="password" id="password" required pl={undefined} value={undefined} min={undefined} max={undefined} />
             <div className={styles.form_bottom}>
                 <div className={styles.form_bottom_top}>
                     <div className={styles.form_bottom_left}>
