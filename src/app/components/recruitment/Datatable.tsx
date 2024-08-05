@@ -27,9 +27,9 @@ export function Datatable({ tableHead, tableData }: dataTableProps) {
   const paginationsMin = paginationsMax - paginationsRange;
   console.log(paginations > tableData.length / paginationsRange)
   const router = useRouter()
-  const showInterviewStatus = (route) => {
-    router.push("scheduling/interview-status")
-  }
+ const showInterviewStatus = () => {
+  router.push("scheduling/interview-status");
+};
   useEffect(() => {
     setPaginations(1)
   }, [tableData])
