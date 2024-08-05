@@ -85,7 +85,7 @@ export function Datatable({ tableHead, tableData }: dataTableProps) {
       </TableBody>
       <TableFooter>
         <TableRow>
-          <TableCell colSpan="6">
+          <TableCell colSpan={Number(6)}>
             <div className="flex justify-between">
               {paginations > 1 && <button onClick={() => setPaginations(prev => prev - 1)} className="flex items-center px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                 <span>Prev</span>
