@@ -7,6 +7,9 @@ import { Dot } from 'lucide-react';
 import Workingchart from './Workingchart';
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
+interface YearlyData {
+  [year: number]: number[];
+}
 const BarChart = () => {
   const [selectedYear, setSelectedYear] = useState(2021);
 
@@ -43,7 +46,7 @@ const BarChart = () => {
 
   function getDataForYear(year: number) {
     // Replace this with your actual data logic
-    const yearlyData = {
+    const yearlyData: YearlyData = {
       2021: [65, 59, 80, 81, 56, 55, 40, 80, 74, 28, 66, 99],
       2020: [45, 79, 50, 61, 76, 75, 60, 90, 54, 38, 76, 89],
       2019: [25, 49, 70, 91, 66, 85, 50, 70, 64, 18, 56, 79],
