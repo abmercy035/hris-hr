@@ -5,7 +5,7 @@ import 'quill/dist/quill.snow.css';
 import Image from 'next/image';
 
 export default function StepOne() {
-  const editorRef = useRef('');
+  const editorRef = useRef<HTMLDivElement>(null);
   const [name, setName] = useState('Laura Miller');
   const [profileImage, setProfileImage] = useState('');
   const defaultProfileImage = '/path/to/default/profile/image.jpg';
