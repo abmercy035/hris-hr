@@ -5,6 +5,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 import { Card } from './ui/card';
 import { Dot } from 'lucide-react';
 import Workingchart from './Workingchart';
+import type { ChartOptions } from 'chart.js';
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 interface YearlyData {
@@ -30,7 +31,7 @@ const BarChart = () => {
     ],
   };
 
-  const options = {
+  const options: ChartOptions<'bar'> = {
     responsive: true,
     maintainAspectRatio: false, // Ensures the chart fits the container's height
     plugins: {
